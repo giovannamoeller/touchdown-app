@@ -51,8 +51,11 @@
 		483898D72A01BB5A003D6858 /* Touchdown */ = {
 			isa = PBXGroup;
 			children = (
+				48D0BEF02A01BE00003696AD /* Model */,
+				48D0BEEF2A01BDFD003696AD /* Data */,
+				48D0BEEE2A01BDF8003696AD /* View */,
+				48D0BEED2A01BDE6003696AD /* Screen */,
 				483898D82A01BB5A003D6858 /* TouchdownApp.swift */,
-				483898DA2A01BB5A003D6858 /* ContentView.swift */,
 				483898DC2A01BB5B003D6858 /* Assets.xcassets */,
 				483898DE2A01BB5B003D6858 /* Preview Content */,
 			);
@@ -65,6 +68,35 @@
 				483898DF2A01BB5B003D6858 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		48D0BEED2A01BDE6003696AD /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				483898DA2A01BB5A003D6858 /* ContentView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		48D0BEEE2A01BDF8003696AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48D0BEEF2A01BDFD003696AD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		48D0BEF02A01BE00003696AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
