@@ -15,6 +15,7 @@
 		48D0BEF62A01BE25003696AD /* player.json in Resources */ = {isa = PBXBuildFile; fileRef = 48D0BEF22A01BE25003696AD /* player.json */; };
 		48D0BEF72A01BE25003696AD /* category.json in Resources */ = {isa = PBXBuildFile; fileRef = 48D0BEF32A01BE25003696AD /* category.json */; };
 		48D0BEF82A01BE25003696AD /* product.json in Resources */ = {isa = PBXBuildFile; fileRef = 48D0BEF42A01BE25003696AD /* product.json */; };
+		48D0BEFC2A01CD99003696AD /* SystemDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0BEFB2A01CD99003696AD /* SystemDesign.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		48D0BEF32A01BE25003696AD /* category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = category.json; sourceTree = "<group>"; };
 		48D0BEF42A01BE25003696AD /* product.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = product.json; sourceTree = "<group>"; };
 		48D0BEF92A01C1FF003696AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		48D0BEFB2A01CD99003696AD /* SystemDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemDesign.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		483898D72A01BB5A003D6858 /* Touchdown */ = {
 			isa = PBXGroup;
 			children = (
+				48D0BEFA2A01CD8C003696AD /* Utils */,
 				48D0BEF92A01C1FF003696AD /* Info.plist */,
 				48D0BEF02A01BE00003696AD /* Model */,
 				48D0BEEF2A01BDFD003696AD /* Data */,
@@ -111,6 +114,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		48D0BEFA2A01CD8C003696AD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				48D0BEFB2A01CD99003696AD /* SystemDesign.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +200,7 @@
 			files = (
 				483898DB2A01BB5A003D6858 /* ContentView.swift in Sources */,
 				483898D92A01BB5A003D6858 /* TouchdownApp.swift in Sources */,
+				48D0BEFC2A01CD99003696AD /* SystemDesign.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
