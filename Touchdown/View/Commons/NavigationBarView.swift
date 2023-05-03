@@ -25,7 +25,7 @@ struct NavigationBarView: View {
           .foregroundColor(.black)
       } //: BUTTON
       
-      Spacer()
+      Spacer() 
       
       LogoView()
         .opacity(isLogoAnimating ? 1 : 0)

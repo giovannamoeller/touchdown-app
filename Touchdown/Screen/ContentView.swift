@@ -15,12 +15,17 @@ struct ContentView: View {
   
   var body: some View {
     VStack {
+      NavigationBarView()
+        .padding()
+        .background(.white)
+        .shadow(color: .black.opacity(0.05), radius: 5, x: 0, y: 5)
+      
       Spacer()
       
       FooterView()
         .padding(.horizontal)
-    }
-    .padding()
+    } //: VSTACK
+    .background(Colors.colorBackground.ignoresSafeArea())
   }
 }
 
