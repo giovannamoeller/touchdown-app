@@ -25,7 +25,7 @@ struct ProductGridView: View {
           LazyVGrid(columns: Layout.gridLayout, alignment: .center, spacing: Layout.columnSpacing, pinnedViews: []) {
               ForEach(products) { product in
                 NavigationLink {
-                  ProductItemView(product: product)
+                  ProductDetailView(product: product)
                 } label: {
                   ProductItemView(product: product)
                 }
