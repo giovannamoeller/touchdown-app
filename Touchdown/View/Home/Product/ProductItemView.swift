@@ -30,6 +30,7 @@ struct ProductItemView: View {
       Text(product.name)
         .font(.title2)
         .fontWeight(.heavy)
+        .foregroundColor(.black)
       
       Text("$\(product.price)")
         .foregroundColor(.gray)
