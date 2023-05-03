@@ -13,10 +13,10 @@ struct ProductRatingView: View {
       Text("Ratings")
         .bold()
       
-      HStack(spacing: 0) {
+      HStack(spacing: -2) {
         ForEach(0..<5) { item in
           Image(systemName: "star.square.fill")
-            .font(.largeTitle)
+            .font(.title)
         }
       }
     } //: VSTACK

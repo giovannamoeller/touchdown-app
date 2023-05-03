@@ -23,9 +23,8 @@ struct ProductSizesView: View {
       HStack(spacing: 8) {
         ForEach(sizes, id: \.self) { size in
           Text(size)
-            .font(.title3)
-            .bold()
-            .frame(width: 42, height: 42)
+            .font(.headline)
+            .frame(width: 30, height: 30)
             .background(
               RoundedRectangle(cornerRadius: 8).stroke(Colors.colorGray, lineWidth: 1.5)
             )
