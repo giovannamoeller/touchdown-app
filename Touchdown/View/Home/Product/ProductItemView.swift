@@ -31,7 +31,7 @@ struct ProductItemView: View {
         .font(.title2)
         .fontWeight(.heavy)
       
-      Text("$\(product.price.rounded())")
+      Text("$\(product.price)")
         .foregroundColor(.gray)
         .bold()
     } //: VSTACK
