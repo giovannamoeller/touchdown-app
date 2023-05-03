@@ -11,12 +11,14 @@ struct ProductNavigationBarView: View {
   
   // MARK: - PROPERTIES
   
+  @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+  
   // MARK: - BODY
   
   var body: some View {
     HStack {
       Button {
-        //
+        self.presentationMode.wrappedValue.dismiss()
       } label: {
         Image(systemName: "chevron.left")
           .font(.title)
