@@ -21,8 +21,8 @@ struct BrandGridView: View {
         .fontWeight(.heavy)
         .padding(16)
       
-      ScrollView(.vertical, showsIndicators: false) {
-        LazyVGrid(columns: Layout.gridLayout, alignment: .center, spacing: Layout.columnSpacing, pinnedViews: []) {
+      ScrollView(.horizontal, showsIndicators: false) {
+        LazyHGrid(rows: Layout.gridLayout, alignment: .center, spacing: Layout.columnSpacing, pinnedViews: []) {
           ForEach(brands) { brand in
             BrandItemView(brand: brand)
           } //: LOOP
