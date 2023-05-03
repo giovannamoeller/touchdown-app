@@ -31,6 +31,7 @@
 		48E2EA142A020349005B87CB /* ProductGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA132A020349005B87CB /* ProductGridView.swift */; };
 		48E2EA172A020670005B87CB /* BrandItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA162A020670005B87CB /* BrandItemView.swift */; };
 		48E2EA192A020682005B87CB /* BrandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA182A020682005B87CB /* BrandModel.swift */; };
+		48E2EA1B2A020766005B87CB /* BrandGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA1A2A020766005B87CB /* BrandGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		48E2EA132A020349005B87CB /* ProductGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGridView.swift; sourceTree = "<group>"; };
 		48E2EA162A020670005B87CB /* BrandItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandItemView.swift; sourceTree = "<group>"; };
 		48E2EA182A020682005B87CB /* BrandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandModel.swift; sourceTree = "<group>"; };
+		48E2EA1A2A020766005B87CB /* BrandGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				48E2EA162A020670005B87CB /* BrandItemView.swift */,
+				48E2EA1A2A020766005B87CB /* BrandGridView.swift */,
 			);
 			path = Brand;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				48D0BEFF2A01CE32003696AD /* FooterView.swift in Sources */,
 				48E2EA062A01F3A7005B87CB /* CategoryModel.swift in Sources */,
 				48E2EA0E2A020122005B87CB /* ProductModel.swift in Sources */,
+				48E2EA1B2A020766005B87CB /* BrandGridView.swift in Sources */,
 				483898D92A01BB5A003D6858 /* TouchdownApp.swift in Sources */,
 				48D0BF0B2A01EDC5003696AD /* CarouselView.swift in Sources */,
 				48D0BEFC2A01CD99003696AD /* SystemDesign.swift in Sources */,

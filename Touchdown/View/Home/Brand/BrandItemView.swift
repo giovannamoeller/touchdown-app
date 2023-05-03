@@ -22,8 +22,9 @@ struct BrandItemView: View {
       .padding()
       .background(Color.white.cornerRadius(16))
       .background(
-        RoundedRectangle(cornerRadius: 16).strokeBorder(.gray, lineWidth: 1.5)
+        RoundedRectangle(cornerRadius: 16).stroke(Colors.colorGray, style: .init(lineWidth: 1.5))
       )
+      .frame(maxWidth: 158)
   }
 }
 
