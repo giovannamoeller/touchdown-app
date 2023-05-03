@@ -8,13 +8,29 @@
 import SwiftUI
 
 struct BrandItemView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+  
+  // MARK: - PROPERTIES
+  
+  let brand: Brand
+  
+  // MARK: - BODY
+  
+  var body: some View {
+    Image(brand.image)
+      .resizable()
+      .scaledToFit()
+      .padding()
+      .background(Color.white.cornerRadius(16))
+      .background(
+        RoundedRectangle(cornerRadius: 16).strokeBorder(.gray, lineWidth: 1.5)
+      )
+  }
 }
 
 struct BrandItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        BrandItemView()
-    }
+  static let brands: [Brand] = DataManager.decode("brand")
+  
+  static var previews: some View {
+    BrandItemView(brand: brands[0])
+  }
 }
