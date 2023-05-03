@@ -21,14 +21,18 @@ struct CarouselView: View {
         Image(player.image)
           .resizable()
           .scaledToFit()
-          .cornerRadius(16)
-      }
-    }.tabViewStyle(PageTabViewStyle())
+          .cornerRadius(12)
+          .padding(.top, 10)
+          .padding(.horizontal, 15)
+      } //: LOOP
+    } //: TAB
+    .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
   }
 }
 
 struct CarouselView_Previews: PreviewProvider {
   static var previews: some View {
     CarouselView()
+      .background(.black)
   }
 }

@@ -19,11 +19,18 @@ struct ContentView: View {
         .padding()
         .background(.white)
         .shadow(color: .black.opacity(0.05), radius: 5, x: 0, y: 5)
-      
-      Spacer()
-      
-      FooterView()
-        .padding(.horizontal)
+            
+      ScrollView(.vertical, showsIndicators: false) {
+        VStack(spacing: 0) {
+          CarouselView()
+            //.frame(height: UIScreen.main.bounds.width / 1.475)
+            .frame(minHeight: 256)
+            .padding(.vertical, 10)
+          
+          FooterView()
+            .padding(.horizontal)
+        } //: VSTACK
+      } //: SCROLL
     } //: VSTACK
     .background(Colors.colorBackground.ignoresSafeArea())
   }
