@@ -44,6 +44,9 @@ struct ProductDetailView: View {
           
           Spacer()
           
+          ProductQuantityFavouriteView()
+            .padding(.vertical, 10)
+          
           ProductButtonView(product: product)
             .padding()
             .padding(.bottom, 20)
