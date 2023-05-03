@@ -19,10 +19,11 @@ struct ProductItemView: View {
   // MARK: - BODY
   
   var body: some View {
-    VStack(spacing: 8) {
+    VStack(alignment: .leading, spacing: 8) {
       Image(product.image)
         .resizable()
         .scaledToFit()
+        .padding()
         .background(backgroundColor)
         .cornerRadius(16)
       

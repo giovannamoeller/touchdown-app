@@ -28,6 +28,7 @@
 		48E2EA0C2A01FD87005B87CB /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA0B2A01FD87005B87CB /* SectionView.swift */; };
 		48E2EA0E2A020122005B87CB /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA0D2A020122005B87CB /* ProductModel.swift */; };
 		48E2EA122A02019A005B87CB /* ProductItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA112A02019A005B87CB /* ProductItemView.swift */; };
+		48E2EA142A020349005B87CB /* ProductGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA132A020349005B87CB /* ProductGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		48E2EA0B2A01FD87005B87CB /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		48E2EA0D2A020122005B87CB /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		48E2EA112A02019A005B87CB /* ProductItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemView.swift; sourceTree = "<group>"; };
+		48E2EA132A020349005B87CB /* ProductGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				48E2EA112A02019A005B87CB /* ProductItemView.swift */,
+				48E2EA132A020349005B87CB /* ProductGridView.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			files = (
 				48E2EA122A02019A005B87CB /* ProductItemView.swift in Sources */,
 				48E2EA0A2A01F644005B87CB /* CategoryGridView.swift in Sources */,
+				48E2EA142A020349005B87CB /* ProductGridView.swift in Sources */,
 				483898DB2A01BB5A003D6858 /* ContentView.swift in Sources */,
 				48D0BF042A01E1F6003696AD /* LogoView.swift in Sources */,
 				48D0BEFF2A01CE32003696AD /* FooterView.swift in Sources */,
