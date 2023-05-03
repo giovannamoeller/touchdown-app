@@ -24,6 +24,7 @@
 		48D0BF0B2A01EDC5003696AD /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0BF0A2A01EDC5003696AD /* CarouselView.swift */; };
 		48E2EA062A01F3A7005B87CB /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA052A01F3A7005B87CB /* CategoryModel.swift */; };
 		48E2EA082A01F466005B87CB /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA072A01F466005B87CB /* CategoryItemView.swift */; };
+		48E2EA0A2A01F644005B87CB /* CategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA092A01F644005B87CB /* CategoryGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		48D0BF0A2A01EDC5003696AD /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		48E2EA052A01F3A7005B87CB /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		48E2EA072A01F466005B87CB /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
+		48E2EA092A01F644005B87CB /* CategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				48D0BEFE2A01CE32003696AD /* FooterView.swift */,
 				48D0BF0A2A01EDC5003696AD /* CarouselView.swift */,
 				48E2EA072A01F466005B87CB /* CategoryItemView.swift */,
+				48E2EA092A01F644005B87CB /* CategoryGridView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48E2EA0A2A01F644005B87CB /* CategoryGridView.swift in Sources */,
 				483898DB2A01BB5A003D6858 /* ContentView.swift in Sources */,
 				48D0BF042A01E1F6003696AD /* LogoView.swift in Sources */,
 				48D0BEFF2A01CE32003696AD /* FooterView.swift in Sources */,
