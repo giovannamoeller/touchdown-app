@@ -20,7 +20,9 @@ struct ProductDetailView: View {
   
   var body: some View {
       VStack(alignment: .leading) {
-        // HEADER
+        ProductNavigationBarView()
+          .padding(.horizontal)
+
         ProductHeaderView(product: product)
           .padding()
           .zIndex(1)
