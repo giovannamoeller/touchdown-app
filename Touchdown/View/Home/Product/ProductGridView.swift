@@ -15,14 +15,21 @@ struct ProductGridView: View {
   // MARK: - BODY
   
   var body: some View {
-    ScrollView(.vertical, showsIndicators: false) {
-      LazyVGrid(columns: Layout.gridLayout, alignment: .center, spacing: Layout.columnSpacing, pinnedViews: []) {
-          ForEach(products) { product in
-            ProductItemView(product: product)
-          } //: LOOP
-      } //: GRID
-      .padding(.horizontal, 15)
-      .padding(.vertical, 10)
+    VStack(alignment: .leading) {
+      Text("Helmets")
+        .font(.largeTitle)
+        .fontWeight(.heavy)
+        .padding(16)
+      
+      ScrollView(.vertical, showsIndicators: false) {
+        LazyVGrid(columns: Layout.gridLayout, alignment: .center, spacing: Layout.columnSpacing, pinnedViews: []) {
+            ForEach(products) { product in
+              ProductItemView(product: product)
+            } //: LOOP
+        } //: GRID
+        .padding(.horizontal, 15)
+        .padding(.vertical, 10)
+      }
     } //: SCROLL
   }
 }
