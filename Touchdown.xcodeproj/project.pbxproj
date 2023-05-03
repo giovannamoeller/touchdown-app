@@ -32,6 +32,7 @@
 		48E2EA172A020670005B87CB /* BrandItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA162A020670005B87CB /* BrandItemView.swift */; };
 		48E2EA192A020682005B87CB /* BrandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA182A020682005B87CB /* BrandModel.swift */; };
 		48E2EA1B2A020766005B87CB /* BrandGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA1A2A020766005B87CB /* BrandGridView.swift */; };
+		48E2EA1D2A020933005B87CB /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA1C2A020933005B87CB /* ProductDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		48E2EA162A020670005B87CB /* BrandItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandItemView.swift; sourceTree = "<group>"; };
 		48E2EA182A020682005B87CB /* BrandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandModel.swift; sourceTree = "<group>"; };
 		48E2EA1A2A020766005B87CB /* BrandGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandGridView.swift; sourceTree = "<group>"; };
+		48E2EA1C2A020933005B87CB /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +209,7 @@
 			children = (
 				48E2EA112A02019A005B87CB /* ProductItemView.swift */,
 				48E2EA132A020349005B87CB /* ProductGridView.swift */,
+				48E2EA1C2A020933005B87CB /* ProductDetailView.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48E2EA122A02019A005B87CB /* ProductItemView.swift in Sources */,
+				48E2EA1D2A020933005B87CB /* ProductDetailView.swift in Sources */,
 				48E2EA0A2A01F644005B87CB /* CategoryGridView.swift in Sources */,
 				48E2EA172A020670005B87CB /* BrandItemView.swift in Sources */,
 				48E2EA142A020349005B87CB /* ProductGridView.swift in Sources */,
