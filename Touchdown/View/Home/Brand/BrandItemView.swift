@@ -24,7 +24,6 @@ struct BrandItemView: View {
       .background(
         RoundedRectangle(cornerRadius: 16).stroke(Colors.colorGray, style: .init(lineWidth: 1.5))
       )
-      .frame(maxWidth: 158)
   }
 }
 

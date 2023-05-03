@@ -27,6 +27,7 @@ struct BrandGridView: View {
             BrandItemView(brand: brand)
           } //: LOOP
         } //: GRID
+        .frame(height: 256)
         .padding(.horizontal, 15)
         .padding(.vertical, 10)
       }
