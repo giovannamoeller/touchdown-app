@@ -35,7 +35,8 @@ struct ProductDetailView: View {
             
             ProductSizesView()
           } //: HSTACK
-          .padding(.vertical, 32)
+          .padding(.top, -32)
+          .padding(.bottom)
           
           ScrollView(.vertical, showsIndicators: false) {
             Text(product.description)
@@ -50,15 +51,16 @@ struct ProductDetailView: View {
             .padding(.vertical, 10)
           
           ProductButtonView(product: product)
-            .padding()
-            .padding(.bottom, 20)
+            .padding(.horizontal)
           
         } //: VSTACK
         .padding(.horizontal)
-        .background(.white)
-        .cornerRadius(32)
-        .shadow(color: Color.black.opacity(0.15), radius: 15, x: 0, y: -10)
-        .ignoresSafeArea()
+        .background(
+          Color.white
+            .clipShape(CustomShape())
+            .padding(.top, -100)
+            .ignoresSafeArea()
+        )
         
       } //: VSTACK
       .background(backgroundColor.ignoresSafeArea())
