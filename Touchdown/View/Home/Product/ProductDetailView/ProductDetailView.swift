@@ -22,53 +22,45 @@ struct ProductDetailView: View {
     ZStack {
       backgroundColor.ignoresSafeArea()
       
-      ScrollView(.vertical, showsIndicators: false) {
-        VStack(alignment: .leading) {
-          VStack(alignment: .leading, spacing: 32) {
-            ProductTitleView(headline: "Protective Gear", title: product.name, color: .white)
-            
-            ProductTitleView(headline: "Price", title: "$\(product.price)", color: .black)
-          } //: VSTACK
+      VStack(alignment: .leading) {
+        
+        // HEADER
+        ProductHeaderView(product: product)
           .padding()
-                    
-          ZStack(alignment: .topTrailing) {
-            VStack {
-              Spacer()
-              
-              HStack {
-                ProductRatingView()
-                
-                Spacer()
-                
-                ProductSizesView()
-              } //: HSTACK
-              
-              Spacer()
-              
-              Text(product.description)
-              
-              Spacer()
-            } //: VSTACK
-            .padding()
-            .background(Color.white)
-            .cornerRadius(32)
-            .ignoresSafeArea()
+        
+        VStack {
+          Spacer()
+          
+          HStack {
+            ProductRatingView()
             
-            Image(product.image)
-              .resizable()
-              .scaledToFit()
-              .frame(maxWidth: 186)
-              .offset(x: -16, y: -102)
-          } //: ZSTACK
+            Spacer()
+            
+            ProductSizesView()
+          } //: HSTACK
+          .padding(.top, 32)
+          .padding(.bottom, 8)
+          
+          Spacer()
+          
+          Text(product.description)
+            .foregroundColor(.gray)
+          
+          Spacer()
         } //: VSTACK
-      } //: SCROLLVIEW
+        .padding()
+        .background(Color.white)
+        .cornerRadius(32)
+        .shadow(color: .black.opacity(0.15), radius: 20, x: 0, y: -5)
+        .ignoresSafeArea()
+      } //: VSTACK
     } //: ZSTACK
   }
 }
 
 struct ProductDetailView_Previews: PreviewProvider {
   static let products: [Product] = DataManager.decode("product")
-
+  
   static var previews: some View {
     ProductDetailView(product: products[0])
   }

@@ -33,9 +33,9 @@
 		48E2EA192A020682005B87CB /* BrandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA182A020682005B87CB /* BrandModel.swift */; };
 		48E2EA1B2A020766005B87CB /* BrandGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA1A2A020766005B87CB /* BrandGridView.swift */; };
 		48E2EA1D2A020933005B87CB /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA1C2A020933005B87CB /* ProductDetailView.swift */; };
-		48E2EA202A021200005B87CB /* ProductTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA1F2A021200005B87CB /* ProductTitleView.swift */; };
 		48E2EA222A021481005B87CB /* ProductRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA212A021481005B87CB /* ProductRatingView.swift */; };
 		48E2EA242A021589005B87CB /* ProductSizesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA232A021589005B87CB /* ProductSizesView.swift */; };
+		48E2EA262A021FFB005B87CB /* ProductHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA252A021FFB005B87CB /* ProductHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,9 +67,9 @@
 		48E2EA182A020682005B87CB /* BrandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandModel.swift; sourceTree = "<group>"; };
 		48E2EA1A2A020766005B87CB /* BrandGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandGridView.swift; sourceTree = "<group>"; };
 		48E2EA1C2A020933005B87CB /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
-		48E2EA1F2A021200005B87CB /* ProductTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTitleView.swift; sourceTree = "<group>"; };
 		48E2EA212A021481005B87CB /* ProductRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRatingView.swift; sourceTree = "<group>"; };
 		48E2EA232A021589005B87CB /* ProductSizesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSizesView.swift; sourceTree = "<group>"; };
+		48E2EA252A021FFB005B87CB /* ProductHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,9 +233,9 @@
 			isa = PBXGroup;
 			children = (
 				48E2EA1C2A020933005B87CB /* ProductDetailView.swift */,
-				48E2EA1F2A021200005B87CB /* ProductTitleView.swift */,
 				48E2EA212A021481005B87CB /* ProductRatingView.swift */,
 				48E2EA232A021589005B87CB /* ProductSizesView.swift */,
+				48E2EA252A021FFB005B87CB /* ProductHeaderView.swift */,
 			);
 			path = ProductDetailView;
 			sourceTree = "<group>";
@@ -316,7 +316,6 @@
 			files = (
 				48E2EA122A02019A005B87CB /* ProductItemView.swift in Sources */,
 				48E2EA1D2A020933005B87CB /* ProductDetailView.swift in Sources */,
-				48E2EA202A021200005B87CB /* ProductTitleView.swift in Sources */,
 				48E2EA0A2A01F644005B87CB /* CategoryGridView.swift in Sources */,
 				48E2EA172A020670005B87CB /* BrandItemView.swift in Sources */,
 				48E2EA142A020349005B87CB /* ProductGridView.swift in Sources */,
@@ -329,6 +328,7 @@
 				48E2EA1B2A020766005B87CB /* BrandGridView.swift in Sources */,
 				483898D92A01BB5A003D6858 /* TouchdownApp.swift in Sources */,
 				48D0BF0B2A01EDC5003696AD /* CarouselView.swift in Sources */,
+				48E2EA262A021FFB005B87CB /* ProductHeaderView.swift in Sources */,
 				48D0BEFC2A01CD99003696AD /* SystemDesign.swift in Sources */,
 				48E2EA0C2A01FD87005B87CB /* SectionView.swift in Sources */,
 				48D0BF092A01ECCF003696AD /* DataManager.swift in Sources */,
