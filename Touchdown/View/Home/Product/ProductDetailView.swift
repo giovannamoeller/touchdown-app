@@ -23,21 +23,26 @@ struct ProductDetailView: View {
       backgroundColor.ignoresSafeArea()
       
       VStack(alignment: .leading) {
-        Text("Protective Gear")
-          .foregroundColor(.white)
-        
-        Text(product.name)
-          .font(.largeTitle)
-          .fontWeight(.heavy)
-          .foregroundColor(.white)
-        
-        Text("Price")
-          .foregroundColor(.black)
-        
-        Text("$\(product.price)")
-          .font(.largeTitle)
-          .fontWeight(.heavy)
-          .foregroundColor(.black)
+        VStack(alignment: .leading, spacing: 32) {
+          VStack(alignment: .leading, spacing: 8) {
+            Text("Protective Gear")
+              .foregroundColor(.white)
+            
+            Text(product.name)
+              .font(.system(size: 42, weight: .heavy))
+              .foregroundColor(.white)
+          } //: VSTACK
+          
+          VStack(alignment: .leading, spacing: 8) {
+            Text("Price")
+              .foregroundColor(.black)
+            
+            Text("$\(product.price)")
+              .font(.system(size: 42, weight: .heavy))
+              .foregroundColor(.black)
+          } //: VSTACK
+        } //: VSTACK
+        .padding()
         
         ZStack(alignment: .topTrailing) {
           VStack {
