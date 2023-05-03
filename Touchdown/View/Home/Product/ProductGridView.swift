@@ -15,7 +15,6 @@ struct ProductGridView: View {
   // MARK: - BODY
   
   var body: some View {
-    NavigationStack {
       VStack(alignment: .leading) {
         Text("Helmets")
           .font(.largeTitle)
@@ -36,7 +35,6 @@ struct ProductGridView: View {
           .padding(.vertical, 10)
         } //: SCROLL
       } //: VSTACK
-    } //: NAVIGATION
   }
 }
 
