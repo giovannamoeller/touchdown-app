@@ -18,6 +18,7 @@ struct ContentView: View {
       Spacer()
       
       FooterView()
+        .padding(.horizontal)
     }
     .padding()
   }
