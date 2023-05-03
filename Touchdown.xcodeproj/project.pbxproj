@@ -18,6 +18,7 @@
 		48D0BEFC2A01CD99003696AD /* SystemDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0BEFB2A01CD99003696AD /* SystemDesign.swift */; };
 		48D0BEFF2A01CE32003696AD /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0BEFE2A01CE32003696AD /* FooterView.swift */; };
 		48D0BF022A01E07A003696AD /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0BF012A01E07A003696AD /* CustomNavigationBar.swift */; };
+		48D0BF042A01E1F6003696AD /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D0BF032A01E1F6003696AD /* LogoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		48D0BEFB2A01CD99003696AD /* SystemDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemDesign.swift; sourceTree = "<group>"; };
 		48D0BEFE2A01CE32003696AD /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		48D0BF012A01E07A003696AD /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		48D0BF032A01E1F6003696AD /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				48D0BF012A01E07A003696AD /* CustomNavigationBar.swift */,
+				48D0BF032A01E1F6003696AD /* LogoView.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				483898DB2A01BB5A003D6858 /* ContentView.swift in Sources */,
+				48D0BF042A01E1F6003696AD /* LogoView.swift in Sources */,
 				48D0BEFF2A01CE32003696AD /* FooterView.swift in Sources */,
 				483898D92A01BB5A003D6858 /* TouchdownApp.swift in Sources */,
 				48D0BEFC2A01CD99003696AD /* SystemDesign.swift in Sources */,

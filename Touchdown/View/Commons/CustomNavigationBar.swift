@@ -25,6 +25,10 @@ struct CustomNavigationBar: View {
       
       Spacer()
       
+      LogoView()
+      
+      Spacer()
+      
       Button {
         //
       } label: {
