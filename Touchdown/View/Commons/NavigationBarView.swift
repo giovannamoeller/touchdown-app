@@ -11,6 +11,8 @@ struct NavigationBarView: View {
   
   // MARK: - PROPERTIES
   
+  @State private var isLogoAnimating: Bool = false
+  
   // MARK: - BODY
   
   var body: some View {
@@ -26,6 +28,13 @@ struct NavigationBarView: View {
       Spacer()
       
       LogoView()
+        .opacity(isLogoAnimating ? 1 : 0)
+        .offset(x: 0, y: isLogoAnimating ? 0 : -25)
+        .onAppear {
+          withAnimation(.easeOut(duration: 0.75)) {
+            isLogoAnimating.toggle()
+          }
+        }
       
       Spacer()
       
@@ -43,7 +52,7 @@ struct NavigationBarView: View {
             .offset(x: 13, y: -10)
         } //: ZSTACK
       } //: BUTTON
-    }
+    } //: HSTACK
   }
 }
 
