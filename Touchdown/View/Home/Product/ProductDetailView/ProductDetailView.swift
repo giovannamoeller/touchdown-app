@@ -19,18 +19,12 @@ struct ProductDetailView: View {
   // MARK: - BODY
   
   var body: some View {
-    ZStack {
-      backgroundColor.ignoresSafeArea()
-      
       VStack(alignment: .leading) {
-        
         // HEADER
         ProductHeaderView(product: product)
           .padding()
-        
-        VStack {
-          Spacer()
-          
+                
+        VStack(alignment: .center) {
           HStack {
             ProductRatingView()
             
@@ -38,23 +32,22 @@ struct ProductDetailView: View {
             
             ProductSizesView()
           } //: HSTACK
-          .padding(.top, 32)
-          .padding(.bottom, 8)
+          .padding(.vertical)
           
+          ScrollView(.vertical, showsIndicators: false) {
+            Text(product.description)
+              .font(.system(.body, design: .rounded))
+              .foregroundColor(.gray)
+              .multilineTextAlignment(.leading)
+          } //: SCROLL
+            
           Spacer()
           
-          Text(product.description)
-            .foregroundColor(.gray)
-          
-          Spacer()
         } //: VSTACK
-        .padding()
-        .background(Color.white)
-        .cornerRadius(32)
-        .shadow(color: .black.opacity(0.15), radius: 20, x: 0, y: -5)
-        .ignoresSafeArea()
+        .padding(.horizontal)
+        .background(.white)
       } //: VSTACK
-    } //: ZSTACK
+      .background(backgroundColor.ignoresSafeArea())
   }
 }
 
