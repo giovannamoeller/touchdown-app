@@ -42,6 +42,12 @@ struct ProductDetailView: View {
               .multilineTextAlignment(.leading)
           } //: SCROLL
           
+          Spacer()
+          
+          ProductButtonView(product: product)
+            .padding()
+            .padding(.bottom, 20)
+          
         } //: VSTACK
         .padding(.horizontal)
         .background(.white)
