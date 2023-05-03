@@ -1,5 +1,5 @@
 //
-//  CustomNavigationBar.swift
+//  NavigationBarView.swift
 //  Touchdown
 //
 //  Created by Giovanna Moeller on 02/05/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CustomNavigationBar: View {
+struct NavigationBarView: View {
   
   // MARK: - PROPERTIES
   
@@ -47,8 +47,8 @@ struct CustomNavigationBar: View {
   }
 }
 
-struct CustomNavigationBar_Previews: PreviewProvider {
+struct NavigationBarView_Previews: PreviewProvider {
   static var previews: some View {
-    CustomNavigationBar()
+    NavigationBarView()
   }
 }
