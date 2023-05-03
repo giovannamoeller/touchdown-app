@@ -13,6 +13,8 @@ struct ProductHeaderView: View {
   
   let product: Product
   
+  @State private var isAnimating: Bool = false
+  
   // MARK: - BODY
   
   var body: some View {
@@ -33,13 +35,20 @@ struct ProductHeaderView: View {
             .font(.system(size: 42, weight: .heavy))
         } //: VSTACK
         .foregroundColor(.black)
+        .offset(y: isAnimating ? -50 : -75)
         
         Spacer()
         
         Image(product.image)
           .resizable()
           .scaledToFit()
+          .offset(y: isAnimating ? 0 : -35)
       } //: HSTACK
+      .onAppear {
+        withAnimation(.easeOut(duration: 0.75)) {
+          isAnimating.toggle()
+        }
+      }
     } //: VSTACK
   }
 }
