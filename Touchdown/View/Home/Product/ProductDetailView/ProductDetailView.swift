@@ -23,6 +23,7 @@ struct ProductDetailView: View {
         // HEADER
         ProductHeaderView(product: product)
           .padding()
+          .zIndex(1)
                 
         VStack(alignment: .center) {
           HStack {
@@ -32,7 +33,7 @@ struct ProductDetailView: View {
             
             ProductSizesView()
           } //: HSTACK
-          .padding(.vertical)
+          .padding(.vertical, 32)
           
           ScrollView(.vertical, showsIndicators: false) {
             Text(product.description)
@@ -40,12 +41,14 @@ struct ProductDetailView: View {
               .foregroundColor(.gray)
               .multilineTextAlignment(.leading)
           } //: SCROLL
-            
-          Spacer()
           
         } //: VSTACK
         .padding(.horizontal)
         .background(.white)
+        .cornerRadius(32)
+        .shadow(color: Color.black.opacity(0.15), radius: 15, x: 0, y: -10)
+        .ignoresSafeArea()
+        
       } //: VSTACK
       .background(backgroundColor.ignoresSafeArea())
   }
