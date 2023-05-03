@@ -31,7 +31,7 @@ struct ProductHeaderView: View {
         VStack(alignment: .leading, spacing: 6) {
           Text("Price")
           
-          Text("$\(product.price)")
+          Text(product.formattedPrice)
             .font(.system(size: 42, weight: .heavy))
         } //: VSTACK
         .foregroundColor(.black)
@@ -54,9 +54,8 @@ struct ProductHeaderView: View {
 }
 
 struct ProductHeaderView_Previews: PreviewProvider {
-  
   static let products: [Product] = DataManager.decode("product")
-  
+
   static var previews: some View {
     ProductHeaderView(product: products[0])
       .background(Color.gray)

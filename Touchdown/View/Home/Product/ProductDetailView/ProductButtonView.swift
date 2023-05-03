@@ -10,9 +10,6 @@ import SwiftUI
 struct ProductButtonView: View {
   
   let product: Product
-  var backgroundColor: Color {
-    return Color(red: product.color[0], green: product.color[1], blue: product.color[2])
-  }
   
   var body: some View {
     Button {
@@ -28,7 +25,7 @@ struct ProductButtonView: View {
       Spacer()
     } //: BUTTON
     .padding(.vertical, 16)
-    .background(backgroundColor)
+    .background(product.backgroundColor)
     .clipShape(Capsule())
   }
 }

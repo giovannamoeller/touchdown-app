@@ -12,9 +12,6 @@ struct ProductDetailView: View {
   // MARK: - PROPERTIES
   
   let product: Product
-  var backgroundColor: Color {
-    return Color(red: product.color[0], green: product.color[1], blue: product.color[2])
-  }
   
   // MARK: - BODY
   
@@ -63,13 +60,14 @@ struct ProductDetailView: View {
         )
         
       } //: VSTACK
-      .background(backgroundColor.ignoresSafeArea())
+      .background(product.backgroundColor.ignoresSafeArea())
+      .navigationBarBackButtonHidden()
   }
 }
 
 struct ProductDetailView_Previews: PreviewProvider {
   static let products: [Product] = DataManager.decode("product")
-  
+
   static var previews: some View {
     ProductDetailView(product: products[0])
   }

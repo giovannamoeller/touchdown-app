@@ -41,5 +41,6 @@ struct ProductGridView: View {
 struct ProductGridView_Previews: PreviewProvider {
   static var previews: some View {
     ProductGridView()
+      .environmentObject(Shop())
   }
 }

@@ -11,3 +11,11 @@ class Shop: ObservableObject {
   @Published var showingProduct: Bool = false
   @Published var selectedProduct: Product?
 }
+
+class ProductData: ObservableObject {
+  @Published var product: Product
+  
+  init(product: Product) {
+    self.product = product
+  }
+}

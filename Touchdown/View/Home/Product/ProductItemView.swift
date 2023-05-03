@@ -12,9 +12,6 @@ struct ProductItemView: View {
   // MARK: - PROPERTIES
   
   let product: Product
-  var backgroundColor: Color {
-    return Color(red: product.color[0], green: product.color[1], blue: product.color[2])
-  }
   
   // MARK: - BODY
   
@@ -24,7 +21,7 @@ struct ProductItemView: View {
         .resizable()
         .scaledToFit()
         .padding()
-        .background(backgroundColor)
+        .background(product.backgroundColor)
         .cornerRadius(16)
       
       Text(product.name)
@@ -32,7 +29,7 @@ struct ProductItemView: View {
         .fontWeight(.heavy)
         .foregroundColor(.black)
       
-      Text("$\(product.price)")
+      Text(product.formattedPrice)
         .foregroundColor(.gray)
         .bold()
     } //: VSTACK
