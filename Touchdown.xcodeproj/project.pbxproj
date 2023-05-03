@@ -26,6 +26,7 @@
 		48E2EA082A01F466005B87CB /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA072A01F466005B87CB /* CategoryItemView.swift */; };
 		48E2EA0A2A01F644005B87CB /* CategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA092A01F644005B87CB /* CategoryGridView.swift */; };
 		48E2EA0C2A01FD87005B87CB /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA0B2A01FD87005B87CB /* SectionView.swift */; };
+		48E2EA0E2A020122005B87CB /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E2EA0D2A020122005B87CB /* ProductModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		48E2EA072A01F466005B87CB /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
 		48E2EA092A01F644005B87CB /* CategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGridView.swift; sourceTree = "<group>"; };
 		48E2EA0B2A01FD87005B87CB /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		48E2EA0D2A020122005B87CB /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			children = (
 				48D0BF052A01EC6F003696AD /* PlayerModel.swift */,
 				48E2EA052A01F3A7005B87CB /* CategoryModel.swift */,
+				48E2EA0D2A020122005B87CB /* ProductModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				48D0BF042A01E1F6003696AD /* LogoView.swift in Sources */,
 				48D0BEFF2A01CE32003696AD /* FooterView.swift in Sources */,
 				48E2EA062A01F3A7005B87CB /* CategoryModel.swift in Sources */,
+				48E2EA0E2A020122005B87CB /* ProductModel.swift in Sources */,
 				483898D92A01BB5A003D6858 /* TouchdownApp.swift in Sources */,
 				48D0BF0B2A01EDC5003696AD /* CarouselView.swift in Sources */,
 				48D0BEFC2A01CD99003696AD /* SystemDesign.swift in Sources */,
