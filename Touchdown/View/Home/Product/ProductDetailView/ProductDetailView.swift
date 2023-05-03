@@ -35,6 +35,16 @@ struct ProductDetailView: View {
             VStack {
               Spacer()
               
+              HStack {
+                ProductRatingView()
+                
+                Spacer()
+                
+                ProductSizesView()
+              } //: HSTACK
+              
+              Spacer()
+              
               Text(product.description)
               
               Spacer()
