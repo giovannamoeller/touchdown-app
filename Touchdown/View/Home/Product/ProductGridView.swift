@@ -10,7 +10,7 @@ import SwiftUI
 struct ProductGridView: View {
   // MARK: - PROPERTIES
   
-  let products: [Product] = DataManager.decode("product")
+  @ObservedObject var viewModel: ProductViewModel = ProductViewModel()
   
   // MARK: - BODY
   
@@ -23,7 +23,7 @@ struct ProductGridView: View {
         
         ScrollView(.vertical, showsIndicators: false) {
           LazyVGrid(columns: Layout.gridLayout, alignment: .center, spacing: Layout.columnSpacing, pinnedViews: []) {
-              ForEach(products) { product in
+            ForEach(viewModel.products) { product in
                 NavigationLink {
                   ProductDetailView(product: product)
                 } label: {
@@ -35,12 +35,12 @@ struct ProductGridView: View {
           .padding(.vertical, 10)
         } //: SCROLL
       } //: VSTACK
+      .environmentObject(viewModel)
   }
 }
 
 struct ProductGridView_Previews: PreviewProvider {
   static var previews: some View {
     ProductGridView()
-      .environmentObject(Shop())
   }
 }
