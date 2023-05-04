@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ProductButtonView: View {
   
-  let product: Product
-  
+  @EnvironmentObject var productData: ProductData
+
   var body: some View {
     Button {
       //
@@ -25,15 +25,13 @@ struct ProductButtonView: View {
       Spacer()
     } //: BUTTON
     .padding(.vertical, 16)
-    .background(product.backgroundColor)
+    .background(productData.product.backgroundColor)
     .clipShape(Capsule())
   }
 }
 
 struct ProductButtonView_Previews: PreviewProvider {
-  static let products: [Product] = DataManager.decode("product")
-
   static var previews: some View {
-    ProductButtonView(product: products[0])
+    ProductButtonView()
   }
 }

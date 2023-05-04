@@ -19,3 +19,11 @@ class ProductViewModel: ObservableObject {
     self.products = DataManager.decode("product")
   }
 }
+
+class ProductData: ObservableObject {
+  @Published var product: Product
+  
+  init(product: Product) {
+    self.product = product
+  }
+}
