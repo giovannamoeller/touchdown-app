@@ -32,7 +32,12 @@ struct NavigationBarView: View {
         .offset(x: 0, y: isLogoAnimating ? 0 : -25)
         .onAppear {
           withAnimation(.easeOut(duration: 0.75)) {
-            isLogoAnimating.toggle()
+            isLogoAnimating = true
+          }
+        }
+        .onDisappear {
+          withAnimation(.easeOut(duration: 0.75)) {
+            isLogoAnimating = false
           }
         }
       

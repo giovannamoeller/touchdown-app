@@ -12,8 +12,10 @@ struct ProductDetailView: View {
   // MARK: - PROPERTIES
   
   let product: Product
-  var backgroundColor: Color {
-    return Color(red: product.color[0], green: product.color[1], blue: product.color[2])
+  @EnvironmentObject var productData: ProductData
+  
+  init(product: Product) {
+    self.product = product
   }
   
   // MARK: - BODY
@@ -23,7 +25,7 @@ struct ProductDetailView: View {
         ProductNavigationBarView()
           .padding(.horizontal)
 
-        ProductHeaderView(product: product)
+        ProductHeaderView()
           .padding()
           .zIndex(1)
                 
@@ -50,7 +52,7 @@ struct ProductDetailView: View {
           ProductQuantityFavouriteView()
             .padding(.vertical, 10)
           
-          ProductButtonView(product: product)
+          ProductButtonView()
             .padding(.horizontal)
           
         } //: VSTACK
@@ -63,14 +65,17 @@ struct ProductDetailView: View {
         )
         
       } //: VSTACK
-      .background(backgroundColor.ignoresSafeArea())
+      .background(product.backgroundColor.ignoresSafeArea())
+      .navigationBarBackButtonHidden()
+      .environmentObject(ProductData(product: product))
   }
 }
 
 struct ProductDetailView_Previews: PreviewProvider {
   static let products: [Product] = DataManager.decode("product")
-  
+
   static var previews: some View {
     ProductDetailView(product: products[0])
+      .environmentObject(ProductData(product: products[0]))
   }
 }

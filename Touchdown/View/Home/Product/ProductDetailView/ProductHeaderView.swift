@@ -11,8 +11,7 @@ struct ProductHeaderView: View {
   
   // MARK: - PROPERTIES
   
-  let product: Product
-  
+  @EnvironmentObject var productData: ProductData
   @State private var isAnimating: Bool = false
   
   // MARK: - BODY
@@ -22,7 +21,7 @@ struct ProductHeaderView: View {
       VStack(alignment: .leading, spacing: 6) {
         Text("Protective Gear")
         
-        Text(product.name)
+        Text(productData.product.name)
           .font(.system(size: 42, weight: .heavy))
       } //: VSTACK
       .foregroundColor(.white)
@@ -31,7 +30,7 @@ struct ProductHeaderView: View {
         VStack(alignment: .leading, spacing: 6) {
           Text("Price")
           
-          Text("$\(product.price)")
+          Text(productData.product.formattedPrice)
             .font(.system(size: 42, weight: .heavy))
         } //: VSTACK
         .foregroundColor(.black)
@@ -39,7 +38,7 @@ struct ProductHeaderView: View {
         
         Spacer()
         
-        Image(product.image)
+        Image(productData.product.image)
           .resizable()
           .scaledToFit()
           .offset(y: isAnimating ? 0 : -35)
@@ -54,11 +53,8 @@ struct ProductHeaderView: View {
 }
 
 struct ProductHeaderView_Previews: PreviewProvider {
-  
-  static let products: [Product] = DataManager.decode("product")
-  
   static var previews: some View {
-    ProductHeaderView(product: products[0])
+    ProductHeaderView()
       .background(Color.gray)
   }
 }
